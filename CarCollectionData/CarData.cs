@@ -28,7 +28,8 @@ namespace CarCollectionData
         }
         public int DeleteCars(Cars car)
         {
-            return sqlData.DeleteCars(car.Brand, car.Model, car.YearModel);
+      
+            return sqlData.DeleteCars(car.Brand);
         }
 
 

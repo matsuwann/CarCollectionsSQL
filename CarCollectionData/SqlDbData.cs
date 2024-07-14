@@ -6,8 +6,9 @@ namespace CarCollectionData
 {
     public class SqlDbData
     {
-        string connectionString
-        = "Data Source =MATSU\\SQLEXPRESS; Initial Catalog = CarManagement; Integrated Security = True;";
+        static string connectionString
+            = "Server = tcp:40.83.122.147,1433; Database = CarManagement; User Id = sa; Password = integ2!";
+        //= "Data Source =MATSU\\SQLEXPRESS; Initial Catalog = CarManagement; Integrated Security = True;";
 
         SqlConnection sqlConnection;
 
@@ -85,17 +86,16 @@ namespace CarCollectionData
 
         }
 
-        public int DeleteCars(string Brand, string Model, string YearModel)
+        public int DeleteCars(string Brand)
         {
             int success;
 
-            string deleteStatement = $"UPDATE FROM cars WHERE Brand = @Brand, Model = @Model, YearModel = @YearModel";
+            string deleteStatement = $"DELETE FROM cars WHERE Brand = @Brand";
             SqlCommand deleteCommand = new SqlCommand(deleteStatement, sqlConnection);
             sqlConnection.Open();
 
             deleteCommand.Parameters.AddWithValue("@Brand", Brand);
-            deleteCommand.Parameters.AddWithValue("@Model", Model);
-            deleteCommand.Parameters.AddWithValue("@YearModel", YearModel);
+
 
             success = deleteCommand.ExecuteNonQuery();
 

@@ -53,7 +53,7 @@ namespace CarCollectionBusiness
         {
             bool result = false;
 
-            if (ValidationServices.CheckIfCarExist(cars.Brand, cars.Model, cars.YearModel))
+            if (ValidationServices.CheckIfBrandExist(cars.Brand))
             {
                 result = carData.DeleteCars(cars) > 0;
             }

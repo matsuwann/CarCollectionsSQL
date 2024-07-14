@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using CarCollectionBusiness;
+using CarCollectionModel;
 using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace CarCollectionAPI.Controllers
@@ -45,6 +46,22 @@ namespace CarCollectionAPI.Controllers
         
             return new JsonResult(result);
         }
+
+        [HttpDelete]
+        public JsonResult DeleteCar(CarCollectionAPI.Cars request)
+        {
+            
+            var carToDelete = new CarCollectionModel.Cars
+            {
+                Brand = request.Brand
+
+            };
+
+            var result = _carCUD.DeleteCar(carToDelete);
+
+            return new JsonResult(result);
+        }
+
     }
         
 }
