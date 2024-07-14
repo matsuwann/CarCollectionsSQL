@@ -14,9 +14,10 @@ namespace Client
 
             foreach (var item in cars)
             {
-                Console.WriteLine (item.Brand);
+                Console.WriteLine(item.Brand);
                 Console.WriteLine(item.Model);
                 Console.WriteLine(item.YearModel);
+                Console.WriteLine("");
 
             }
         }

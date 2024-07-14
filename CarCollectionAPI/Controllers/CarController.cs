@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using CarCollectionBusiness;
+using CarCollectionModel;
 using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace CarCollectionAPI.Controllers
@@ -18,15 +19,15 @@ namespace CarCollectionAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<CarCollectionAPI.Cars> GetCars()
+        public IEnumerable<Cars> GetCars()
         {
             var cars = _carGetServices.GetAllCars();
 
-            List<CarCollectionAPI.Cars> cont = new List<CarCollectionAPI.Cars>();
+            List<Cars> cont = new List<Cars>();
 
             foreach (var car in cars)
             {
-                cont.Add(new CarCollectionAPI.Cars { Brand = car.Brand, Model = car.Model, YearModel = car.YearModel });
+                cont.Add(new Cars { Brand = car.Brand, Model = car.Model, YearModel = car.YearModel });
             }
             return cont;
         }
@@ -45,6 +46,21 @@ namespace CarCollectionAPI.Controllers
         
             return new JsonResult(result);
         }
+
+        [HttpDelete]
+        public JsonResult DeleteCar(Cars request)
+        {
+            
+            var carToDelete = new CarCollectionModel.Cars
+            {
+                Brand = request.Brand
+            };
+
+            var result = _carCUD.DeleteCar(carToDelete);
+
+            return new JsonResult(result);
+        }
+
     }
         
 }

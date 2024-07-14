@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Car Collections SQL\CarCollectionBusiness.csproj" />
+    <ProjectReference Include="..\CarCollectionModel\CarCollectionModel.csproj" />
   </ItemGroup>
 
 </Project>

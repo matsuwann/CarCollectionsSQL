@@ -2,9 +2,11 @@
 {
     public class Cars
     {
-        public string Brand;
-        public string Model;
-        public string YearModel;
+        public string Brand { get; set; }
+
+        public string Model { get; set; }
+
+        public string YearModel { get; set; }
     }
 }
 
