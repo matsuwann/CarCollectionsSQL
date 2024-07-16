@@ -50,11 +50,9 @@ namespace CarCollectionAPI.Controllers
         [HttpDelete]
         public JsonResult DeleteCar(Cars request)
         {
-
             var carToDelete = new CarCollectionModel.Cars
             {
                 Brand = request.Brand
-
             };
 
             var result = _carCUD.DeleteCar(carToDelete);
