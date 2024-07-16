@@ -43,17 +43,18 @@ namespace CarCollectionAPI.Controllers
         public JsonResult UpdateCar(Cars request)
         {
             var result = _carCUD.UpdateCar(request.Brand, request.Model, request.YearModel);
-        
+
             return new JsonResult(result);
         }
 
         [HttpDelete]
         public JsonResult DeleteCar(Cars request)
         {
-            
+
             var carToDelete = new CarCollectionModel.Cars
             {
                 Brand = request.Brand
+
             };
 
             var result = _carCUD.DeleteCar(carToDelete);
@@ -62,5 +63,5 @@ namespace CarCollectionAPI.Controllers
         }
 
     }
-        
+
 }
