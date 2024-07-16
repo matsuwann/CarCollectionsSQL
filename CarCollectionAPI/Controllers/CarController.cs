@@ -46,22 +46,6 @@ namespace CarCollectionAPI.Controllers
 
             return new JsonResult(result);
         }
-
-        [HttpDelete]
-        public JsonResult DeleteCar(Cars request)
-        {
-
-            var carToDelete = new CarCollectionModel.Cars
-            {
-                Brand = request.Brand
-
-            };
-
-            var result = _carCUD.DeleteCar(carToDelete);
-
-            return new JsonResult(result);
-        }
-
     }
 
 }
