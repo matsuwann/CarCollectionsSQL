@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCollectionBusiness", "Car Collections SQL\CarCollectionBusiness.csproj", "{A1511816-FC49-48ED-94DD-F770109ABB14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarCollectionBusiness", "Car Collections SQL\CarCollectionBusiness.csproj", "{A1511816-FC49-48ED-94DD-F770109ABB14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCollectionModel", "CarCollectionModel\CarCollectionModel.csproj", "{50F84FED-A761-44A2-9C98-8CFC4255E9A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarCollectionModel", "CarCollectionModel\CarCollectionModel.csproj", "{50F84FED-A761-44A2-9C98-8CFC4255E9A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCollectionData", "CarCollectionData\CarCollectionData.csproj", "{485ADCF8-4F84-49AB-8081-7BD77030B89B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarCollectionData", "CarCollectionData\CarCollectionData.csproj", "{485ADCF8-4F84-49AB-8081-7BD77030B89B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{45AFCFD8-37DC-46C0-9CCE-64290F684B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{45AFCFD8-37DC-46C0-9CCE-64290F684B15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCollectionAPI", "CarCollectionAPI\CarCollectionAPI.csproj", "{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarCollectionAPI", "CarCollectionAPI\CarCollectionAPI.csproj", "{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddEmail", "CarMail\AddEmail.csproj", "{60C8D80B-CC80-4797-9106-B7054DD32BAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateEmail", "UpdateEmail\UpdateEmail.csproj", "{91A4DB35-C440-4541-9D6E-CA674CD84BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteEmail", "DeleteEmail\DeleteEmail.csproj", "{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

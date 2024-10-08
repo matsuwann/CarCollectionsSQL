@@ -4,7 +4,7 @@ using CarCollectionBusiness;
 
 namespace Client
 {
-    internal class Program
+    internal class UI
     {
         static void Main (string[] args)
         {

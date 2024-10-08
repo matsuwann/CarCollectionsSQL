@@ -7,8 +7,8 @@ namespace CarCollectionData
     public class SqlDbData
     {
         static string connectionString
-            = "Server = tcp:20.189.113.46,1433; Database = CarManagement; User Id = sa; Password = integ2!";
-        //= "Data Source =MATSU\\SQLEXPRESS; Initial Catalog = CarManagement; Integrated Security = True;";
+            //= "Server = tcp:20.189.113.46,1433; Database = CarManagement; User Id = sa; Password = integ2!"; //RDP
+        = "Data Source =MATTHEW\\SQLEXPRESS; Initial Catalog = CarManagement; Integrated Security = True;"; //LOCAL
 
         SqlConnection sqlConnection;
 
