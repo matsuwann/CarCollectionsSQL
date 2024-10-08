@@ -8,7 +8,8 @@ namespace Client
     {
         static void Main (string[] args)
         {
-            Console.WriteLine("Test");
+            Console.WriteLine("Obscure Car Management");
+            Console.WriteLine("");
             CarGetServices services = new CarGetServices();
 
             var cars = services.GetAllCars();
