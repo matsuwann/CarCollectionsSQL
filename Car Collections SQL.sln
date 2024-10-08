@@ -15,10 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarCollectionAPI", "CarColl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddEmail", "CarMail\AddEmail.csproj", "{60C8D80B-CC80-4797-9106-B7054DD32BAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateEmail", "UpdateEmail\UpdateEmail.csproj", "{91A4DB35-C440-4541-9D6E-CA674CD84BE8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteEmail", "DeleteEmail\DeleteEmail.csproj", "{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,14 +45,6 @@ Global
 		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91A4DB35-C440-4541-9D6E-CA674CD84BE8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{377DCBF5-B1C2-4A2D-917F-50A08482B8ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

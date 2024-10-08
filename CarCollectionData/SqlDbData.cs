@@ -86,15 +86,16 @@ namespace CarCollectionData
 
         }
 
-        public int DeleteCars(string Brand)
+        public int DeleteCars(string Brand, string Model)
         {
             int success;
 
-            string deleteStatement = $"DELETE FROM cars WHERE Brand = @Brand";
+            string deleteStatement = $"DELETE FROM cars WHERE Brand = @Brand AND Model = @Model";
             SqlCommand deleteCommand = new SqlCommand(deleteStatement, sqlConnection);
             sqlConnection.Open();
 
             deleteCommand.Parameters.AddWithValue("@Brand", Brand);
+            deleteCommand.Parameters.AddWithValue("@Model", Model);
 
 
             success = deleteCommand.ExecuteNonQuery();

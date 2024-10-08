@@ -29,7 +29,7 @@ namespace CarCollectionData
         public int DeleteCars(Cars car)
         {
       
-            return sqlData.DeleteCars(car.Brand);
+            return sqlData.DeleteCars(car.Brand, car.Model);
         }
 
 

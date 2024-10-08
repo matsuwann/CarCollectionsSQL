@@ -25,7 +25,7 @@ namespace CarCollectionBusiness
 
         public bool CreateCar(string Brand, string Model, string YearModel)
         {
-            Cars cars = new Cars {Brand = Brand, Model = Model, YearModel = YearModel };
+            Cars cars = new Cars { Brand = Brand, Model = Model, YearModel = YearModel };
 
             return CreateCar(cars);
         }
@@ -42,9 +42,9 @@ namespace CarCollectionBusiness
             return result;
         }
 
-        public bool UpdateCar(string Brand, string Model, string YearModel)
+        public bool UpdateCar(string Brand, string Model)
         {
-            Cars cars = new Cars { Brand = Brand, Model = Model, YearModel = YearModel };
+            Cars cars = new Cars { Brand = Brand, Model = Model };
 
             return UpdateCar(cars);
         }
