@@ -7,7 +7,7 @@ namespace CarCollectionBusiness
     {
         CarGetServices getServices = new CarGetServices();
 
-        public bool CheckIfBrandExist (string Brand)
+        public bool CheckIfBrandExist(string Brand)
         {
             bool result = getServices.GetBrand(Brand) != null;
             return result;

@@ -42,7 +42,7 @@ namespace CarCollectionAPI.Controllers
         [HttpPatch]
         public JsonResult UpdateCar(Cars request)
         {
-            var result = _carCUD.UpdateCar(request.Brand, request.Model, request.YearModel);
+            var result = _carCUD.UpdateCar(request.Brand, request.Model);
 
             return new JsonResult(result);
         }

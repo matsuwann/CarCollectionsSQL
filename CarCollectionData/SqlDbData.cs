@@ -7,7 +7,7 @@ namespace CarCollectionData
     public class SqlDbData
     {
         static string connectionString
-            //= "Server = tcp:20.189.113.46,1433; Database = CarManagement; User Id = sa; Password = integ2!"; //RDP
+        //= "Server = tcp:20.189.113.46,1433; Database = CarManagement; User Id = sa; Password = integ2!"; //RDP
         = "Data Source =MATTHEW\\SQLEXPRESS; Initial Catalog = CarManagement; Integrated Security = True;"; //LOCAL
 
         SqlConnection sqlConnection;
@@ -61,12 +61,12 @@ namespace CarCollectionData
             sqlConnection.Open();
 
             success = insertCommand.ExecuteNonQuery();
-            
+
             sqlConnection.Close();
 
             return success;
         }
-        
+
         public int UpdateCars(string Brand, string Model, string YearModel)
         {
             int success;

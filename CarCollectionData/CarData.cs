@@ -13,7 +13,7 @@ namespace CarCollectionData
             sqlData = new SqlDbData();
         }
 
-        public List<Cars> GetCars() 
+        public List<Cars> GetCars()
         {
             cars = sqlData.GetCars();
             return cars;
@@ -28,7 +28,7 @@ namespace CarCollectionData
         }
         public int DeleteCars(Cars car)
         {
-      
+
             return sqlData.DeleteCars(car.Brand, car.Model);
         }
 
