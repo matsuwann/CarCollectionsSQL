@@ -1,3 +1,5 @@
+using Amazon.S3;
+using CarCollectionBusiness; 
 
 namespace CarCollectionAPI
 {
@@ -7,26 +9,34 @@ namespace CarCollectionAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+           
+            builder.Services.AddAWSService<IAmazonS3>(); 
+
+            
+            builder.Services.AddSingleton<S3Services>(); 
+
+            
             builder.Services.AddControllers();
 
+            
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            app.UseHttpsRedirection(); 
+            app.UseAuthorization(); 
 
-            app.UseAuthorization();
+            app.MapControllers(); 
 
-            app.MapControllers();
-
-            app.Run();
+            app.Run(); 
         }
     }
 }

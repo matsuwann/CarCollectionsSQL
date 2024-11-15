@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using CarCollectionBusiness;
 using CarCollectionModel;
-using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
 
 namespace CarCollectionAPI.Controllers
 {
@@ -11,11 +12,13 @@ namespace CarCollectionAPI.Controllers
     {
         CarGetServices _carGetServices;
         CarCUD _carCUD;
+        S3Services _s3Service;
 
-        public CarController()
+        public CarController(S3Services s3Service)
         {
             _carGetServices = new CarGetServices();
             _carCUD = new CarCUD();
+            _s3Service = s3Service;
         }
 
         [HttpGet]
@@ -58,6 +61,26 @@ namespace CarCollectionAPI.Controllers
             var result = _carCUD.DeleteCar(carToDelete);
 
             return new JsonResult(result);
+        }
+
+        [HttpPost("upload")]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> UploadFile(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("No file provided.");
+            }
+
+            try
+            {
+                var result = await _s3Service.UploadFileAsync(file);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
     }

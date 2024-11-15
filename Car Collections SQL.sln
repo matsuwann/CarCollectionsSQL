@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarCollectionAPI", "CarCollectionAPI\CarCollectionAPI.csproj", "{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddEmail", "CarMail\AddEmail.csproj", "{60C8D80B-CC80-4797-9106-B7054DD32BAE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC054A1-A0AB-476C-93B6-DC41C54F46ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60C8D80B-CC80-4797-9106-B7054DD32BAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
